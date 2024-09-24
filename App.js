@@ -1,29 +1,25 @@
-//  <div class="parent">
-// <div class="child">
-//     <h1>I am h1 tag</h1>
-// </div>
-// </div> 
+import React from "react";
+import ReactDOM from "react-dom";
+
+import React from 'react'
+
+export const Title = () => {
+  return (<div>Title</div>)
+}
 
 
+//React Element Created by jsx
+const JsxHeading = ( )=> {
 
-
-const parent = React.createElement( 
-    "div", 
-    {id:"parent"},[
-        React.createElement("div", {id:"child"}, 
-            [React.createElement("h1",{},"I am h1 tag"),
-             React.createElement("h2",{},"I am h2 tag")
-            ]
-        ),
-        React.createElement("div", {id:"child2"}, 
-            [React.createElement("h1",{},"I am h1 tag"),
-             React.createElement("h2",{},"I am h2 tag")
-            ]
-        )
-    ] 
-
+    <Title />     
+    return (
+   <>     
+    
+    <h1>Functional Component </h1>
+    </>
 )
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+root.render(<JsxHeading />);

@@ -2,17 +2,24 @@
   "name": "namastereact",
   "version": "1.0.0",
   "description": "This is Namaste-React by Indronil Bose",
-  "main": "App.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+
   },
   "repository": {
     "type": "git",
-    "url": "(https://github.com/indronilbose/https---github.com-indronilbose-namaste-react.git)"
+    "url": "https://github.com/indronilbose/namaste-react.git"
   },
   "author": "Indronil Bose",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
   }
 }
